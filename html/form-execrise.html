@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>regiser</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name" name="firstname" required>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+            <div>
+                <labe for="male" >male</label>
+                <input id='male' value="male" type="radio" name="sex" required>
+                <labe for="female" name="sex">female</label>
+                <input id='female' value="female" type="radio" name="sex" required>
+                <labe for="other" name="sex">other</label>
+                <input id='other' value="other" type="radio" name="sex" required>
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="user@demo.com" required>
+                <label for="password">password</label>
+                <!-- <input type="password" id="password" placeholder="password" name="password" minlength="5"
+                        maxlength="10" size="10" required> support less than pattern -->
+                <input type="password" id="password" placeholder="password" name="password" pattern=".{5,10}" title="password must 5 to 10" size="10" required> 
+            </div>
+            <div>
+                <label>Year
+                    <select name="year">
+                        <option>1996</option>
+                        <option>1998</option>
+                    </select>
+                    <select name="Month">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                        </select>
+                </label>
+             
+            <div>
+                <label for="agree">agree the condition</label>
+                <input id="agree" type="checkbox"  required>
+            </div>
+            <button>submit</button>
+        </form>
+    </body>
